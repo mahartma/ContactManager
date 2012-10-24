@@ -2,6 +2,11 @@ package de.codecentric.calculator;
 
 import java.math.BigDecimal;
 
+/**
+ * 
+ * @author max.hartmann
+ *
+ */
 public class Calculator {
 
 	public BigDecimal add(Number number1, Number number2) {
