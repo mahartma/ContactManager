@@ -3,9 +3,11 @@ package de.codecentric.calculator;
 import java.math.BigDecimal;
 
 /**
+ * simple calculator
  * 
  * @author max.hartmann
- *
+ * 
+ * @see BigDecimal
  */
 public class Calculator {
 
