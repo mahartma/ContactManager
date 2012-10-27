@@ -3,7 +3,7 @@ package de.codecentric.calculator;
 import java.math.BigDecimal;
 
 /**
- * simple calculator
+ * simple calculator...
  * 
  * @author max.hartmann
  * 
@@ -12,7 +12,7 @@ import java.math.BigDecimal;
 public class Calculator {
 
 	/**
-	 * adds two numbers.
+	 * adds two numbers...
 	 * 
 	 * @param number1 first number
 	 * @param number2 second number
