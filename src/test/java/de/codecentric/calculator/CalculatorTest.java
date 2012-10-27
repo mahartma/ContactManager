@@ -1,30 +1,38 @@
 package de.codecentric.calculator;
 
-import java.math.BigDecimal;
+import static org.mockito.Mockito.verify;
+import static org.mockito.MockitoAnnotations.initMocks;
 
-import org.hamcrest.CoreMatchers;
-import org.junit.Assert;
+import javax.swing.JLabel;
+
 import org.junit.Before;
 import org.junit.Test;
+import org.mockito.BDDMockito;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
 
 
 public class CalculatorTest {
 
-	private Calculator calculator;
+	@InjectMocks
+	private Calculator calculator = new Calculator();
+	
+	@Mock
+	private JLabel labelMock;
 
 	@Before
 	public void setUp() {
-		calculator = new Calculator();
+		initMocks(this);
 	}
 	
 	@Test
-	public void shouldAddTwoNumbers() {
+	public void shouldDisplayTheNumber() {
 		//Given
-		double number1 = 1;
-		double number2 = 2;
+		int numberToDisplay = 5;
+		BDDMockito.given(labelMock.getText()).willReturn("0");
 		//When
-		BigDecimal result = calculator.add(number1, number2);
+		calculator.addDigitToDisplay(numberToDisplay);
 		//Then
-		Assert.assertThat(result.doubleValue(), CoreMatchers.is(3d));
+		verify(labelMock).setText("5");
 	}
 }
