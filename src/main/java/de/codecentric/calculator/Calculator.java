@@ -34,7 +34,7 @@ public class Calculator extends JFrame implements ActionListener {
 	private static final long serialVersionUID = 42L;
 
 	// Variables
-	final int MAX_INPUT_LENGTH = 20;
+	final int MAX_INPUT_LENGTH = 30;
 	final int INPUT_MODE = 0;
 	final int RESULT_MODE = 1;
 	final int ERROR_MODE = 2;
