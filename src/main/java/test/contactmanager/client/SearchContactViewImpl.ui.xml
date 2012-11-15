@@ -1,0 +1,22 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:c="urn:import:com.google.gwt.user.cellview.client">
+	<ui:style>
+		.important {
+		font-weight: bold;
+		}
+	</ui:style>
+	<g:HTMLPanel title="Suche">
+		<h2>Benutzerdaten</h2>
+		<label for="userInput">User:</label>
+		<g:TextBox visibleLength="30" ui:field="userInput" />
+		<label for="passwordInput">Password:</label>
+		<g:PasswordTextBox visibleLength="30" ui:field="passwordInput" />
+		<h2>Suche</h2>
+		<label for="nameInput">Suche:</label>
+		<g:TextBox ui:field="nameInput" />
+		<g:Button ui:field="searchButton">suchen</g:Button>
+		<c:DataGrid ui:field='dataGrid' />
+		<c:SimplePager ui:field='pager' />
+	</g:HTMLPanel>
+</ui:UiBinder>
