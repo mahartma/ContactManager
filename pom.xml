@@ -5,6 +5,7 @@
 	<artifactId>ContactManager</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>ContactManager</name>
+	<description>Google Contact Manager</description>
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
