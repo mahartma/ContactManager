@@ -49,6 +49,11 @@ public class ContactManagerServiceImplTest {
 		MockitoAnnotations.initMocks(this);
 	}
 	
+	/**
+	 * test for {@link ContactManagerServiceImpl#queryContacts(String, String, String)}
+	 * 
+	 * @throws Exception
+	 */
 	@Test
 	@SuppressWarnings("unchecked")
 	public void shouldReturnContacts() throws Exception {
