@@ -2,6 +2,7 @@ package test.contactmanager.shared;
 
 import java.io.Serializable;
 
+import com.google.gdata.data.contacts.ContactEntry;
 import com.google.gwt.view.client.ProvidesKey;
 
 /**
@@ -9,6 +10,7 @@ import com.google.gwt.view.client.ProvidesKey;
  * @author max.hartmann
  *
  * @see Serializable
+ * @see ContactEntry
  */
 public class Contact implements Serializable {
 	/**
