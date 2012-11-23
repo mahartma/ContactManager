@@ -4,6 +4,11 @@ import java.io.Serializable;
 
 import com.google.gwt.view.client.ProvidesKey;
 
+/**
+ * 
+ * @author max.hartmann
+ *
+ */
 public class Contact implements Serializable {
 	/**
 	 * 
